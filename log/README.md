@@ -70,7 +70,7 @@ func New(out io.Writer, prefix string, flag int) *Logger {
 
 log 日志分级：  
 debug，error ... [代码实现参考](https://blog.51cto.com/9291927/2294270)  
-[github.com/sirupsen/logrus](github.com/sirupsen/logrus)
+[github log项目](github.com/sirupsen/logrus)
 
 
 ## 文档：
