@@ -42,7 +42,14 @@ type FileInfo interface {
    ModTime() time.Time // modification time
    IsDir() bool        // abbreviation for Mode().IsDir()
    Sys() interface{}   // underlying data source (can return nil)
-}```
+}
+```
+
+```
+func (*File) Seek
+func (f *File) Seek(offset int64, whence int) (ret int64, err error)
+Seek设置下一次读/写的位置。offset为相对偏移量，而whence决定相对位置：0为相对文件开头，1为相对当前位置，2为相对文件结尾。它返回新的偏移量（相对开头）和可能的错误。
+```
 
 ### 文档资料
 [Golang读写文件的几种方式](https://www.jianshu.com/p/7790ca1bc8f6)
